@@ -1,9 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
-  // console.log('---------------');
-  // console.log(arr);
-  // console.log('---------------');
   if (!Array.isArray(arr)) {
     throw Error;
     }
@@ -43,8 +40,5 @@ module.exports = function transform(arr) {
     default: arrNew.push(arr[i]);
     }
     }
-    console.log(arrNew);
     return arrNew;
     };
-
-    //transform([1, 2, 3, '--discard-next', 1337, '--double-prev', 4, 5],);
